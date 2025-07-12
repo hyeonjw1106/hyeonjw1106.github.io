@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>장문연습</title>
+  <link rel="stylesheet" href="장문연습.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <select id="textSelect">
+      <option value="애국가" selected>애국가</option>
+      <option value="별 헤는 밤">별 헤는 밤</option>
+      <option value="님의 침묵">님의 침묵</option>
+      <option value="바람의 사생활">바람의 사생활</option>
+      <option value="찬란">찬란</option>
+    </select>
+    <button id="backBtn">← 돌아가기</button>
+    <h5 class="title"> 장문연습 </h5>
+    <div class="sidebar-spacer"></div>
+    <div class="sidebar-footer">
+      <div id="timeDisplay">시간: 00:00</div>
+      <div id="typingSpeed">타수: 0</div>
+      <div class="speed-bar-container">
+        <div id="speedBar" class="speed-bar"></div>
+      </div>
+      <div id="remainingCount">남은 문장: 0</div>
+    </div>
+    <div id="accuracyDisplay">정확도: 100%</div>
+    <div class="accuracy-bar-container">
+      <div id="accuracyBar" class="accuracy-bar"></div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div id="countdown" class="countdown">3</div>
+
+    <div class="wrapper" id="typingArea" style="display:none;">
+      <div class="current_message" id="current"></div>
+    </div>
+
+    <div class="input_area" id="inputArea" style="display:none;">
+      <input type="text" id="input" autocomplete="off" />
+      <div id="next" class="next-message"></div>
+    </div>
+
+    <div id="keyboard" class="keyboard"></div>
+  </div>
+
+  <div id="resultModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>연습 완료!</h2>
+      <p id="resultTime">걸린 시간: 00:00</p>
+      <p id="resultSpeed">평균 타수: 0</p>
+      <p id="resultAccuracy"> 정확도 : 0 </p>
+      <div class="modal-buttons">
+        <button id="modalBackBtn">돌아가기</button>
+        <button id="modalRetryBtn">다시하기</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="장문연습.js"></script>
+</body>
+</html>

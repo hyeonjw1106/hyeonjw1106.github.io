@@ -1,0 +1,53 @@
+html, body {
+  font-family: sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 로고 영역 */
+.logo-space {
+  width: 1400px;
+  height: 750px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.logo-image {
+  margin-top: -10px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* 버튼 행 */
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* 버튼 스타일 */
+.but {
+  width: 200px;
+  height: 60px;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.but:hover {
+  background-color: black;
+  color: white;
+}
